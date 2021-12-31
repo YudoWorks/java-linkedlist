@@ -24,9 +24,10 @@ public class LinkedList {
     }
 
     public int getLast() {
-        if(head.next != null){
+        while(head.next != null){
             head = head.next;
         }
+        
         return head.value;
     }
 
