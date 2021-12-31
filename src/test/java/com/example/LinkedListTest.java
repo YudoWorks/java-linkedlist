@@ -69,4 +69,13 @@ public class LinkedListTest {
 
         assertEquals(3, linkedList.getLast());
     }
+
+    @Test
+    public void testShowAddOnce() {
+        LinkedList linkedList = new LinkedList();
+
+        linkedList.add(1);
+
+        assertEquals("1", linkedList.show());
+    }
 }

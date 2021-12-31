@@ -31,7 +31,8 @@ public class LinkedList {
         return head.value;
     }
 
-    public void show() {
+    public String show() {
+        return String.valueOf(head.value);
     }
 
 }
