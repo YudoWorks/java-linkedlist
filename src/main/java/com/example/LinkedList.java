@@ -3,13 +3,13 @@ package com.example;
 public class LinkedList {
     Node head;
 
-    public int add(int i) {
+    public void add(int i) {
         Node node = new Node(i);
         if(head == null){
             head = node;
         }
 
-        return node.value;
+        head.next = node;
     }
 
     public LinkedList() {
