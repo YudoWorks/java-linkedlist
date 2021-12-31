@@ -33,6 +33,9 @@ public class LinkedList {
 
     public String show() {
         String linkedListShow = String.valueOf(head.value);
+        if(head.next == null){
+            return linkedListShow;
+        }
         
         head = head.next;
         while(head.next != null){
