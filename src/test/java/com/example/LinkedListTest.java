@@ -25,4 +25,17 @@ public class LinkedListTest {
         assertEquals(1, linkedList.head.value);
         assertEquals(2, linkedList.head.next.value);
     }
+
+    @Test
+    public void testAddThrice() {
+        LinkedList linkedList = new LinkedList();
+
+        linkedList.add(1);
+        linkedList.add(2);
+        linkedList.add(3);
+
+        assertEquals(1, linkedList.head.value);
+        assertEquals(2, linkedList.head.next.value);
+        assertEquals(3, linkedList.head.next.next.value);
+    }
 }

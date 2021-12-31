@@ -7,9 +7,17 @@ public class LinkedList {
         Node node = new Node(i);
         if(head == null){
             head = node;
+            return;
+        }
+
+        Node headCheckPoint = head;
+
+        while (head.next != null) {
+            head = head.next;
         }
 
         head.next = node;
+        head = headCheckPoint;
     }
 
     public LinkedList() {
