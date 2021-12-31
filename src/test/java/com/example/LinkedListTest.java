@@ -48,4 +48,14 @@ public class LinkedListTest {
 
         assertEquals(1, linkedList.getLast());
     }
+
+    @Test
+    public void testGetLastAddTwice() {
+        LinkedList linkedList = new LinkedList();
+
+        linkedList.add(1);
+        linkedList.add(2);
+
+        assertEquals(2, linkedList.getLast());
+    }
 }
