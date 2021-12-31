@@ -13,7 +13,7 @@ public class App
         linkedList.add(1);
         linkedList.add(2);
 
-        linkedList.pop();
+        linkedList.getLast();
 
         linkedList.show();
     }

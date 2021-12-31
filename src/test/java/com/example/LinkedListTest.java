@@ -1,6 +1,7 @@
 package com.example;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertSame;
 
 import org.junit.Test;
 
@@ -37,5 +38,14 @@ public class LinkedListTest {
         assertEquals(1, linkedList.head.value);
         assertEquals(2, linkedList.head.next.value);
         assertEquals(3, linkedList.head.next.next.value);
+    }
+
+    @Test
+    public void testGetLastAddOnce() {
+        LinkedList linkedList = new LinkedList();
+
+        linkedList.add(1);
+
+        assertEquals(1, linkedList.getLast());
     }
 }

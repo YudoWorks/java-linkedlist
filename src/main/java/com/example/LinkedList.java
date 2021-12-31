@@ -23,7 +23,8 @@ public class LinkedList {
     public LinkedList() {
     }
 
-    public void pop() {
+    public int getLast() {
+        return head.value;
     }
 
     public void show() {
