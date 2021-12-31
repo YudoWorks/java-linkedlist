@@ -32,7 +32,7 @@ public class LinkedList {
     }
 
     public String show() {
-        return String.valueOf(head.value) + " - " + String.valueOf(head.next.value);
+        return String.valueOf(head.value) + " - " + String.valueOf(head.next.value) + " - " + String.valueOf(head.next.next.value);
     }
 
 }
