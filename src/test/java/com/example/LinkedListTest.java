@@ -78,4 +78,14 @@ public class LinkedListTest {
 
         assertEquals("1", linkedList.show());
     }
+
+    @Test
+    public void testShowAddTwice() {
+        LinkedList linkedList = new LinkedList();
+
+        linkedList.add(1);
+        linkedList.add(2);
+
+        assertEquals("1 - 2", linkedList.show());
+    }
 }
