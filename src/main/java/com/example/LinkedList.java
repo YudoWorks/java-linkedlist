@@ -21,6 +21,7 @@ public class LinkedList {
     }
 
     public LinkedList() {
+      // Do nothing because it just intended to instantiate a linkedlist instance
     }
 
     public int getLast() {
